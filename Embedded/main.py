@@ -17,6 +17,7 @@ def main():
                 time.sleep(1)
                 turn_off_gpio()
                 time.sleep(1)
+                cleanup_gpio()
                 
             elif user_input == "0":
                 print("Authentication failed!")
@@ -24,6 +25,7 @@ def main():
                 play_audio(False)
                 time.sleep(0.5)
                 turn_off_gpio()
+                cleanup_gpio()
             else:
                 print("Invalid input! Please enter 1 or 0.")
 
